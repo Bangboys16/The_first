@@ -25,7 +25,7 @@ urlpatterns = [
     path('', include('playground.urls')),
     path('api/', include('playground.api.urls')),
     path('__debug__/', include(debug_toolbar.urls)),
-    path('sage/', include('sage.urls'))
+    
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
